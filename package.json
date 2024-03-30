@@ -10,7 +10,9 @@
     "lint": "eslint \"./src/**/*.{ts,tsx}\" --max-warnings 0 --cache",
     "fix": "run-s fix-by-prettier fix-by-eslint",
     "fix-by-prettier": "prettier \"./src/**/*.{ts,tsx}\" --write --ignore-path .gitignore",
-    "fix-by-eslint": "eslint \"./src/**/*.{ts,tsx}\" --fix --max-warnings 0 --cache"
+    "fix-by-eslint": "eslint \"./src/**/*.{ts,tsx}\" --fix --max-warnings 0 --cache",
+    "test": "vitest",
+    "type-check": "tsc --noEmit"
   },
   "devDependencies": {
     "@types/eslint": "8.56.6",
